@@ -77,7 +77,7 @@ function Navbar() {
                 </Logo>
                 <Name>
                     <h1>Wuilmar</h1>
-                    <h2>Matias-Morales</h2>
+                    <h2>matias-morales</h2>
                 </Name>
             </LogoSection>
             <NavigationLinks>

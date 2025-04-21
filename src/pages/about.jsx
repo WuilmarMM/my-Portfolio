@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutSection = styled.section`
-background:yellow;
 font-family: "Helvetica", "Arial", sans-serif;
+padding: 3rem;
 `;
 
 function About() {
