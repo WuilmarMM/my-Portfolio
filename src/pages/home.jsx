@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const HomeSection = styled.section`
 background:black;
@@ -28,7 +29,7 @@ align-items: center;
 }
 `;
 
-const Heading = styled.h1`
+const Heading = styled(motion.h1)`
 font-size: 4rem;
 font-weight: 900;
 line-weight: 1.2;
@@ -43,7 +44,7 @@ font-size: 2.5rem;
 }
 `;
 
-const Subheading = styled.p`
+const Subheading = styled(motion.p)`
 font-size: 1.1rem;
 font-weight: 500;
 max-width: 500px;
@@ -73,12 +74,20 @@ function Home() {
     return (
         <HomeSection>
             <Container>
-                <Heading>
+                <Heading
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{duration:1.0}}
+                >
                     Step into my <br/>
                     <span>Creative <br/>
                     Space.</span>
                 </Heading>
-                <Subheading>
+                <Subheading
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{delay: 0.5, duration:1.0}}
+                >
                    <span>"Design, photography, and creativity—</span> this is my space to bring ideas to life. Explore my
                     work and see how I turn vision into reality."
                 </Subheading>

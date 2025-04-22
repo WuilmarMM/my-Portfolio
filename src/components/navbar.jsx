@@ -9,6 +9,14 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 2rem 3rem;
+flex-wrap: wrap;
+
+@media (max-width: 768px){
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+padding: 1.5rem 2rem;
+}
 `;
 
 const LogoSection = styled.div`
@@ -65,6 +73,12 @@ a{
     width: 100%
     }
 
+}
+
+@media (max-width:768px) {
+flex-direction:column;
+gap: 0.75rem;
+width: 100%;
 }
 `;
 
